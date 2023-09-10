@@ -1099,6 +1099,19 @@ function DiscordLib:Window(text)
 	MyAccountBtnTitle.TextSize = 14.000
 	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
 
+    MyAccountBtnTitle.Name = "MyAccountBtnTitle"
+	MyAccountBtnTitle.Parent = MyAccountBtn
+	MyAccountBtnTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtnTitle.BackgroundTransparency = 1.000
+	MyAccountBtnTitle.BorderSizePixel = 0
+	MyAccountBtnTitle.Position = UDim2.new(0.0759999976, 0, -0.166999996, 0)
+	MyAccountBtnTitle.Size = UDim2.new(0, 95, 0, 39)
+	MyAccountBtnTitle.Font = Enum.Font.GothamSemibold
+	MyAccountBtnTitle.Text = "Pide Boost"
+	MyAccountBtnTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	MyAccountBtnTitle.TextSize = 14.000
+	MyAccountBtnTitle.TextXAlignment = Enum.TextXAlignment.Left
+
 	SettingsTitle.Name = "SettingsTitle"
 	SettingsTitle.Parent = LeftFrame
 	SettingsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
