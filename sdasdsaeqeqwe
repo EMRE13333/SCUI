@@ -31,15 +31,16 @@ local sldr = Chann1:Slider("Fov", 0, 360, 60, function(t) -- A Slider
 print(t) -- Script The Slider Executes
 end)
 
-Chann1 = Tab1:Channel("Spoofer")
+Chann1 = Tab1:Channel("Buys Premium")
 
 
-local drop = Chann1:Dropdown("Hangi Banlar Kalksın",{"TempSpoofer","Hwid","Clear","FpsSpoofer","Cooming Soon"}, function(bool) -- A DropDown
+local drop = Chann1:Dropdown("Free Found",{"TempSpoofer","Hwid","Clear","FpsSpoofer","Cooming Soon"}, function(bool) -- A DropDown
 print(bool) -- You Know 0_o
 end)
 
-Chann1:Button("Spoof", function()
-DiscordLib:Notification("Spoofed", "Spoof Başarılı", "Tamamla") -- The Scirpt The Button Executes
+
+Chann1:Button("Free Not Found", function()
+DiscordLib:Notification("Spooflanmadı satın alın", "Spoof Başarısız", "Tamamla") -- The Scirpt The Button Executes
 end)
 
 Chann1:Label("By Umyt.") -- A Label (Ofc)
