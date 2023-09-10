@@ -1,0 +1,45 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local Win1 = DiscordLib:Window("PideSalonu.Wtf Free Version") -- Title/Name
+
+local Tab1 = Win1:Server("PideSalonu ", "") -- Server/Tab
+
+local Chann1 = Tab1:Channel("Ketcap/Hardal") -- Channel 0_0
+
+
+
+Chann1:Button("Pideniz KetcapluMI", function()
+DiscordLib:Notification("Pideniz", "kEPCUP LANDIN", "Hardalla") -- The Scirpt The Button Executes
+end)
+
+
+Chann1:Seperator() -- Keep This If You Want To
+
+Chann1:Toggle("SilentBot",false, function(bool)
+print(bool) -- Script The Toggle Executes
+shared.config = {
+    hitPart = "Head",
+    fieldOfView = 120,
+    teamCheck = true
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xml4/luau/main/games/rushpoint/silentaim.lua"))()
+end)
+
+
+local sldr = Chann1:Slider("Fov", 0, 360, 60, function(t) -- A Slider
+print(t) -- Script The Slider Executes
+end)
+
+Chann1 = Tab1:Channel("Spoofer")
+
+
+local drop = Chann1:Dropdown("Hangi Banlar Kalksın",{"TempSpoofer","Hwid","Clear","FpsSpoofer","Cooming Soon"}, function(bool) -- A DropDown
+print(bool) -- You Know 0_o
+end)
+
+Chann1:Button("Spoof", function()
+DiscordLib:Notification("Spoofed", "Spoof Başarılı", "Tamamla") -- The Scirpt The Button Executes
+end)
+
+Chann1:Label("By Umyt.") -- A Label (Ofc)
